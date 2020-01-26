@@ -137,15 +137,47 @@ a {
   top: 29px;
   left: 6px;
 }
-
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
 .page-header__info-item:nth-of-type(4)::before {
   background-image: url("../img/search.png");
   top: -11px;
   left: 10px;
 }
-
-
-
+.section-title{
+  text-align: center;
+}
+.section-img{
+  text-align: center;
+}
+.services .section-title{
+  width: 100%;
+}
+.services__description{
+  width: 100%;
+  text-align: center;
+}
+.section-img{
+  margin-left: auto;
+  margin-right: auto;
+}
+.services-img{
+  background-image: url("../img/mustach.png");
+  width: 69px;
+  height: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services__item{
+  display: flex;
+  justify-content: space-between;
+  width: 523px;
+}
+.services__title{
+  
+}
 .page-header__info-link:hover {
   color: #985336;
 }
@@ -244,7 +276,7 @@ a {
 .section-title {
   font-size: 36px;
   letter-spacing: 1px;
-  line-height: 95px;
+  
   color: #212121;
   font-family: "Vani", 'Times New Roman', serif;
   font-weight: bold;
