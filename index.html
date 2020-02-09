@@ -74,18 +74,17 @@
     <h1 class="page-main__title visually-hidden">Barbershop</h1>
     <section class="slider">
       <h2 class="section-title visually-hidden">Promotions</h2>
-      <label class="slider__btn slider__btn--back">
-        <input class="slider__input" type="radio" name="slider-control">Back
-      </label>
-      <label class="slider__btn slider__btn--front">
-        <input class="slider__input" type="radio" name="slider-control">Front
-      </label>
+      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderB">
+      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderF">
+      <label class="slider__btn-round slider__btn--back" for="sliderB"></label>
+      <label class="slider__btn-round slider__btn--front" for="sliderF"> </label>
       <ul class="slider__list">
         <li class="slider__item">
           <p class="slider__slogan">
             <span class="slider__text slider__text--white">welcome to the</span>
             <span class="slider__text slider__text--brown">barbershop</span>
           </p>
+          <img class="slider-img" src="img/bg-1.jpg" alt="" width="1831" height="986">
           <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
         </li>
       </ul>
@@ -140,7 +139,7 @@
       <div class="services-group">
         <h2 class="section-title">Our Services</h2>
         <div class="services-img"></div>
-        <p class="services__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        <p class="services__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>
           accusantium doloremque laudantium, totam rem aperiam</p>
       </div>
       <ul class="services__list">

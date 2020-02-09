@@ -26,7 +26,7 @@
     url('../fonts/Vani.woff2') format('woff2'),
     url('../fonts/Vani.woff') format('woff');
 }
-
+/* globals */
 body {
   min-width: 1170px;
   font-size: 18px;
@@ -156,6 +156,7 @@ a {
 }
 .section-title{
   text-align: center;
+  text-transform: uppercase;
 }
 .section-img{
   text-align: center;
@@ -166,6 +167,7 @@ a {
 .services__description{
   width: 100%;
   text-align: center;
+  
 }
 .section-img{
   margin-left: auto;
@@ -178,6 +180,10 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+.services-img{
+
+}
+
 .services__title{
   text-align: center;
 }
@@ -241,10 +247,6 @@ li{
 .services__item-group{
   width: 100%;
 }
-.services__description{
-  width: 554px;
-  
-}
 .section-title{
   display: flex;
   justify-content: center;
@@ -252,11 +254,8 @@ li{
  .services-img{
   display: flex;
   justify-content: center;
+
  }
-.services__description{ 
- padding-left: 641px;
-}
-  
 .services__item-group:nth-of-type(2){
   padding-left: 795px;
 }
@@ -274,6 +273,10 @@ li{
 }
 .page-header__info-link:hover {
   color: #985336;
+}
+.page-header__nav{
+  position: relative;
+  z-index: 10;
 }
 .services-group{
   width: 100%;
@@ -345,15 +348,41 @@ padding-top: 200px
 .main-menu__link--current:hover {
   color: #2c2c2b;
 }
+.slider{
+  background-color: #acacac;
+  background-image: linear-gradient(circle, rgb(171,171,171) 0%, rgb(155,155,155) 100%);
+  margin-top: -75px;
+}
 
+
+.slider-img{
+  
+  height: auto;
+}
+.slider__list{
+  list-style: none; 
+  width: 1831px;
+  margin: 0 auto;
+        padding: 0;
+}
 .slider__slogan {
   font-size: 72px;
   line-height: 95px;
   font-family: "Vani", 'Times New Roman', serif;
   font-weight: bold;
   text-transform: uppercase;
+  position: absolute;
+  width: 486px;
+  left: 349px;
+  top: 262px;
+  
 }
-
+.slider__item{
+  position: relative;
+}
+.slider__text{
+  letter-spacing: 6.5px;
+}
 .slider__text--white {
   color: #ffffff;
 }
@@ -363,15 +392,35 @@ padding-top: 200px
   color: #985336;
 }
 
-.slider__btn {
-  font-size: 30px;
-  letter-spacing: 1px;
-  line-height: 95px;
-  color: #ffffff;
-  font-weight: 400;
+.slider__btn-round  {
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #685336
 }
+.slider__btn-round::before{
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid #985336;
+  top: 23px;
+  left: 28px;
+  border-top: none;
+  border-right: none;
+  transform: rotate(45deg)
+}
+.slider__btn{
 
-
+font-size: 30px;
+letter-spacing: 0.025px;
+line-height: 1.5;
+color: #ffffff;
+display: block;
+border: 2px solid #985336;
+}
 .section-title {
   font-size: 36px;
   letter-spacing: 1px;
