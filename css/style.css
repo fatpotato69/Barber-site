@@ -161,13 +161,23 @@ a {
   background-position: center  ;
 }
 .page-header__info-item:nth-of-type(4)::before {
-  top: -11px;
+  /* top: -11px;
   left: 10px;
+*/
+  background-image: none;
+}
+.page-header__info-link-search::before {
+  content: "";
+
+  display: block;
+  width: 19px;
+  height: 19px;
 
   background-image: url("../img/search.png");
 }
-
-
+.page-header__info-link-search:hover::before {
+  filter: invert(50%) sepia(100%) saturate(200%) hue-rotate(90deg);
+}
 .services__item-group:nth-of-type(2) {
   padding-left: 795px;
 }
@@ -420,7 +430,7 @@ a {
 .section-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 95px;
+  line-height: 1.5;
   font-family: "Vani", "Times New Roman", serif;
   text-align: center;
   color: #212121;
@@ -429,7 +439,7 @@ a {
 }
 .section-img {
   position: relative;
-
+ top: -5px;
   width: 68px;
   height: 18px;
   margin: 0 auto;
@@ -445,9 +455,9 @@ a {
 .section-img::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: -120px;
-
+  top: 72%;
+  left: -118px;
+  
   width: 90px;
   height: 1px;
 
@@ -456,8 +466,8 @@ a {
 .section-img::after {
   content: "";
   position: absolute;
-  top: 50%;
-  right: -120px;
+  top: 72%;
+  right:  -118px;
 
   width: 90px;
   height: 1px;
@@ -465,28 +475,31 @@ a {
   background-color: #985336;
 }
 .about__title {
+  position: relative;
+  margin-top: 30px;
   font-size: 20px;
   line-height: 30px;
   font-family: "Vani", "Times New Roman", serif;
   text-align: center;
   color: #212121;
   letter-spacing: 1px;
- position: relative;
 }
-.about__title::after{
+.about__title::after {
   content: "";
-  width: 97px;
   position: absolute;
-  background-color: #985336;
-  bottom: 0;
+  bottom: -19px;
   left: calc(50% - (97px / 2));
-height: 2px;
+
+  width: 97px;
+  height: 2px;
+
+  background-color: #985336;
 }
 .about__discription {
   width: 554px;
   margin: 0 auto;
-
   text-align: center;
+  margin-bottom: 103px;
 }
 .statistics__price {
   font-weight: bold;
@@ -505,20 +518,54 @@ height: 2px;
   list-style: none;
 }
 .about__item {
+  position: relative;
+  
   box-sizing: border-box;
   width: 360px;
-  padding: 28px;
+  padding:  60px 20px;
 
   background-color: #f0f0f0;
   border: 1px solid #d5d3d3;
 }
-.about__text{
-  font-size: 18px;
-  line-height: 1.5;
+.about__item::before {
+  content: "";
+  position: absolute;
+  top: calc(-102px/2);
+  left: calc();
+
+  width: 102px;
+  height: 102px;
+  
+  background-color: #ffffff;
+  background-image: url("../img/scissors-and-comb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  border: 1px solid #985336;
+  border-radius: 50%;
+}
+.about__item:nth-of-type(1)::before{
+  content: "";
+  background-image: url("../img/razor.png");
+}
+.about__item:nth-of-type(2)::before{
+  content: "";
+  background-image: url("../img/scissors.png");}
+  .about__item:nth-of-type(3)::before{
+    content: "";
+    background-image: url("../img/scissors-and-comb.png");}
+.about{
+  padding-top: 127px;
+  padding-bottom: 150px;
+
+}
+.about__text {
   font-weight: 900;
+  font-size: 18px;
+  line-height: 1.7;
   color: #3d3d3d;
-
-
+  margin-top: 49px;
+  letter-spacing: 0.5px;
 }
 .statistics__text {
   margin-top: 10px;
@@ -532,7 +579,13 @@ height: 2px;
   letter-spacing: 1px;
   letter-spacing: 0.05em;
 }
+.barber__list{
+  
+} 
+.barber-item{
+width: 60px;
 
+}
 .services__title {
   font-size: 20px;
   line-height: 30px;
@@ -555,8 +608,13 @@ height: 2px;
   font-family: "Vani", "Times New Roman", serif;
   color: #0b0b0b;
   letter-spacing: 1px;
-}
+  text-align: center;
 
+}
+.barbers__text{
+  text-align: center;
+  
+}
 
 .reviews .section-title {
   color: #ffffff;
