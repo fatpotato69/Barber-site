@@ -257,6 +257,8 @@ a {
   color: #e8e6e6;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  transition: all 0.3s;
 }
 
 .main-menu__link:hover {
@@ -426,7 +428,6 @@ a {
   border-color: #ffffff;
 }
 
-
 .slider__btn {
   display: inline-block;
   box-sizing: border-box;
@@ -442,16 +443,20 @@ a {
   letter-spacing: 0.025em;
 
   border: 2px solid #985336;
+
+  transition: all 0.3s;
 }
 
 .slider__btn:focus,
 .slider__btn:hover {
   background-color: #985336;
+  transform: scale(1.2);
 }
 
 .slider__btn:active {
   opacity: 0.7;
 }
+
 
 .section-title {
   margin-bottom: 0;
@@ -1083,6 +1088,10 @@ a {
   padding: 40px 70px;
 
   box-shadow: 0 0 50px -10px black;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e9b44dc7c62f26896c579e9b1a3e0e1310333c8
   animation: modalShow 0.4s linear;
 }
 
@@ -1131,9 +1140,9 @@ a {
 
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px #000000 !important;
-
   -webkit-text-fill-color: #999999 !important;
 }
+<<<<<<< HEAD
 @keyframes modalShow{
   0%{
    left: -2000px;
@@ -1150,5 +1159,27 @@ input:-webkit-autofill {
   }
   100%{
   left: calc(50% - 640px);
+=======
+
+@keyframes modalShow {
+  0% {
+    left: -1000px;
+  }
+
+  25% {
+    left: calc(50% - 680px);
+  }
+
+  50% {
+    left: calc(50% - 620px);
+  }
+
+  75% {
+    left: calc(50% - 660px);
+  }
+
+  100% {
+    left: calc(50% - 640px);
+>>>>>>> 7e9b44dc7c62f26896c579e9b1a3e0e1310333c8
   }
 }
